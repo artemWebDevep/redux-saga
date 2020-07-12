@@ -1,6 +1,7 @@
 import React from 'react';
-import PostForm from "./components/FetchedForm";
 import Posts from "./components/Posts";
+import PostForm from "./components/PostForm";
+
 import FetchedForm from "./components/FetchedForm";
 
 
@@ -15,12 +16,12 @@ function App() {
         <div className='row'>
             <div className='col'>
                 <h2>Синхронные посты</h2>
-                <Posts posts={[1,2,3]}/>
+                <Posts />
             </div>
         </div>
             <div className='col'>
                 <h2>Ассинхронные</h2>
-                <FetchedForm posts={[]}/>
+                <FetchedForm />
             </div>
     </div>
   );
